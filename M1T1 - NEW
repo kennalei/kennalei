@@ -1,0 +1,15 @@
+/* 
+M1T1 - Hello World
+
+*/
+
+// my name is McKenna
+
+#include <iostream>
+using namespace std; 
+
+int main() {
+cout << "Hello World!";
+cout << endl; 
+    return 0;
+}
