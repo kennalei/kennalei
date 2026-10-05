@@ -1,0 +1,133 @@
+/*
+CSC 134
+M2HW1 - GOLD
+McKenna Phillips
+10-4-26
+*/
+
+#include <iostream>
+#include <string>
+#include <iomanip>
+#include <cstdlib>
+#include <ctime>
+
+int main() {
+std::srand(static_cast<unsigned int>(std::time(nullptr)));
+std::string name;
+double starting_balance = 0.0;
+double deposit_amount = 0.0;
+double withdrawl_amount = 0.0;
+
+std::cout << "Enter full name: ";
+std::getline(std::cin, name);
+std::cout << "Enter starting account balance ($): ";
+std::cin >> starting_balance;
+std::cout << "Enter deposit amount ($): ";
+std::cin >> deposit_amount;
+std::cout << "Enter withdrawl amount ($): ";
+std::cin >> withdrawl_amount;
+
+double final_balance = starting_balance + deposit_amount - withdrawl_amount;
+
+int account_number = std::rand() % 900000 + 100000;
+
+std::cout << std::fixed << std::setprecision(2);
+
+std::cout << "\n===============================\n";
+std::cout << "      Transaction Summary      \n";
+std::cout << "===============================\n";
+std::cout << "Name on account: " << name << "\n";
+std::cout << "Account number: " << account_number << "\n";
+std::cout << "Final balance: $" << final_balance << "\n";
+std::cout << "===============================\n";
+
+return 0;
+}
+
+
+
+
+int main() {
+const double cost_per_cubic_foot = 0.30;
+const double charge_per_cubic_foot = 0.52;
+
+double length = 0.0;
+double width = 0.0;
+double height = 0.0;
+double volume = 0.0;
+double cost = 0.0;
+double charge = 0.0;
+double profit = 0.0;
+
+std::cout << "Enter crate length in feet: ";
+std::cin >> length;
+std::cout << "Enter crate width in feet: ";
+std::cin >> width;
+std::cout << "Enter crate height in feet: ";
+std::cin >> height;
+
+volume = length*width*height;
+cost = volume*cost_per_cubic_foot;
+charge = volume*charge_per_cubic_foot;
+profit = charge-cost;
+
+std::cout << std::fixed << std::setprecision(2);
+
+std::cout << "\n=======================================\n";
+std::cout << "      General Crates Accounting        \n";
+std::cout << "========================================="
+std::cout << "Crate volume: " << volume << " cubic feet\n";
+std::cout << "Cost to build: " << cost << "\n";
+std::cout << "Customer charge: " << charge << "\n";
+std::cout << "Net profit: " << profit << "\n";
+std::cout << "=======================================\n";
+
+return 0;
+}
+
+
+
+
+int main(){
+int pizzas_ordered = 0;
+int slices_per_pizza = 0;
+int visitors_coming = 0;
+
+const int slices_per_visitor = 3;
+
+std::cout << "Enter number of pizzas ordered: ";
+std::cin >> pizzas_ordered;
+std::cout << "Enter slices per pizza: ";
+std::cin >> slices_per_pizza;
+std::cout << "Enter number of visitors coming: ";
+std::cin >> visitors_coming;
+
+int total_slices = pizzas_ordered*slices_per_pizza;
+int slices_needed = visitors_coming*slices_per_visitor;
+int slices_left = total_slices-slices_needed;
+
+std::cout << "\n===============================\n";
+std::cout << "         Pizza Summary         \n";
+std::cout << "===============================\n";
+std::cout << "Available slices: " << total_slices << "\n";
+std::cout << "Slices needed: " << slices_needed << "\n";
+std::cout << "Slices left: " << slices_left << "\n";
+std::cout << "===============================\n";
+
+return 0;
+}
+
+
+
+
+int main(){
+std::string school = "FTCC";
+std::string name = "Trojans";
+
+std::cout << "Let's go " << school << "\n";
+std::cout << "Let's go " << school << "\n";
+std::cout << "Let's go " << school << "\n";
+std::cout << "Let's go " << team << "\n";
+
+return 0;   
+}
