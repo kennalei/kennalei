@@ -1,0 +1,49 @@
+// CSC 134
+// M3T1
+// Find the area
+
+#include <iostream>
+using namespace std;
+
+int main() {
+    // Variables
+    double length1, width1, length2, width2; 
+    double area1, area2;
+
+    // Ask user for the length and width
+    cout << "What's the length of the first rectangle? ";
+    cin >> length1;
+    cout << "What's the width of the first rectangle? ";
+    cin >> width1;
+
+    // Find the area
+area1 = length1 * width1;
+
+    // Print the area
+cout << "Rectangle one has an area of " << area1 << endl;
+
+    cout << "What's the length of the second rectangle? ";
+    cin >> length2;
+    cout << "What's the width of the second rectangle? ";
+    cin >> width2;
+
+    // Find the area
+area2 = length2 * width2;
+
+    // Print the area
+cout << "Rectangle two has an area of " << area2 << endl;
+
+if (area1 > area2) {
+    cout << "Rectangle one is bigger" << endl;
+}
+
+else if (area1 < area2) {
+    cout << "Rectangle two is bigger" << endl;
+}
+
+else if (area1 == area2) {
+    cout << "They are the same size" << endl;
+}
+
+    return 0;
+}
